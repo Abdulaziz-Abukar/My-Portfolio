@@ -26,7 +26,8 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    /* height: 500vw; */
+    background: linear-gradient(to bottom, var(--graphite-slate) 0%, var(--bg-color) 100%);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -89,7 +90,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, var(--graphite-slate) 0%, var(--bg-color) 100%);
+    /* background: linear-gradient(to bottom, var(--graphite-slate) 0%, var(--bg-color) 100%); */
     color: var(--text-color);
 }
 
@@ -124,12 +125,12 @@ header {
 .about-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--header-color)
 }
 
 .text-container {
-    width: 60%;
+    max-width: 800px;
     margin: 0 auto;
     line-height: 2.5;
     font-size: 1.2rem;
@@ -154,7 +155,7 @@ header {
 .skills-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--header-color)
 }
 
@@ -167,15 +168,89 @@ header {
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
-  }
+}
   
 
   .icon-container img {
     width: 70px;
     transition: transform 0.3s ease;
-  }
+}
   
   .icon-container img:hover {
     transform: scale(1.2);
-  }
-  
+}
+
+/* PROJECT-SECTION */
+
+.projects-section {
+    color: var(--text-color);
+    margin-top: 8rem;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--header-color)
+}
+
+.project-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects {
+    width: 25%;
+
+}
+
+.overlay {
+    padding: 1rem;
+}
+
+.projects h3 {
+    font-size: 1.3rem;
+    margin: .5rem 0 2.5rem 0;
+}
+
+.language-framework {
+    margin: 1.4rem
+}
+
+.language-framework i {
+    font-size: 7rem;
+}
+
+.language-framework p:first-of-type {
+    margin-top: 2.5rem;
+}
+
+.language-framework p {
+    padding: .5rem;
+}
+
+.projects:hover {
+    border: 2px solid var(--divider-light);
+    border-radius: 1rem;
+    background-color: var(--hover-red);
+    color: var(--button-hover-text);  
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(255, 107, 107, 0.3);
+}
+
+/* REFERENCES SECTION */
+.references-section {
+    color: var(--text-color);
+    margin-top: 8rem;
+}
+
+.references-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--header-color)
+}
