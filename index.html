@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="This is Abdulaziz's Web Portfolio">
     <meta name="keywords" content="HTML, CSS JavaScript, Java, Android, IOS, Python">
-    <meta name="author" content="Abdulaziz Abukar"
+    <meta name="author" content="Abdulaziz Abukar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
@@ -14,9 +14,13 @@
     <!-- CSS & JS links -->
      <link rel="stylesheet" href="styles/reset.css">
      <link rel="stylesheet" href="styles/styles.css">
+     <script src="./scripts/script.js" defer></script>
 
      <!-- Fonts? -->
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
      <!-- DEVIICONS -->
      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -27,23 +31,27 @@
         <div class="title-parent">
             <h2>Abdulaziz Abukar</h2>
         </div>
-        <nav class="navbar">
+
+        <div class="hamburger" id="hamburger">
+            ☰ 
+        </div>
+        <nav class="navbar" id="navbar">
             <ul class="list-container">
-                <li class="list-items"><a href="#">About</a></li>
-                <li class="list-items"><a href="#">Skills</a></li>
-                <li class="list-items"><a href="#">Projects</a></li>
-                <li class="list-items"><a href="#">Contact</a></li>
+                <li class="list-items"><a href="#about-section">About</a></li>
+                <li class="list-items"><a href="#skills-section">Skills</a></li>
+                <li class="list-items"><a href="#projects-section">Projects</a></li>
+                <li class="list-items"><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section class="hero-section">
         <div class="mission-container">
             <h1>Hi, I'm Abdulaziz</h1>
-            <h2>But others know me as a <span id="changing-title">Developer.</span></h2>
+            <h2>But others know me as a <span id="changing-title">Developer</span></h2>
         </div>
     </section>
     <main>
-        <section class="about-section">
+        <section class="about-section" id="about-section">
             <h2>About</h2>
             <div class="text-container">
                 <h3>Craft Code Across Platforms</h3>
@@ -82,11 +90,11 @@
                     Building, experimenting, and always improving!
                 </p>
                 <h3>Work Experience</h3>
-                <p>If you'd like to see my work experience in detail, you can <a href="./assets/Abdulaziz Abukar Resume.pdf" target="_blank" class="resume-button">click here to download my resume</a>.</p>
+                <p>If you'd like to see my work experience in detail, you can click here to <a href="./assets/Abdulaziz Abukar Resume.pdf" target="_blank" class="resume-button">download my resume</a>.</p>
 
             </div>
         </section>
-        <section class="skills-section">
+        <section class="skills-section" id="skills-section">
             <h2>Skills</h2>
             <div class="icon-container">      
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
@@ -111,7 +119,7 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" />
             </div>
         </section>
-        <section class="projects-section">
+        <section class="projects-section" id="projects-section">
             <h2>Projects</h2>
             <div class="project-container">
                 <div class="projects">
@@ -146,7 +154,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
             <h2>Contact</h2>
             <div class="contact-container">
                 <p>Have a question or want to work together? Feel free to drop me a message below!</p>
@@ -154,7 +162,7 @@
                     <input type="email" name="email" id="email" placeholder="Your email address" required>
                     <textarea name="message" id="message" rows="6" placeholder="Leave a message here!" required></textarea>
                 
-                    <!-- Optional: prevent spam -->
+                    <!-- prevent spam -->
                     <input type="hidden" name="_captcha" value="false">
                 
                     <!-- Optional: redirect to thank you page -->
@@ -170,10 +178,19 @@
                   <a href="https://github.com/Abdulaziz-Abukar" target="_blank" aria-label="GitHub">
                     <i class="devicon-github-original"></i>
                   </a>
+                  <div class="phone-icon-container">
+                    <div class="tooltip" id="phone-tooltip">Click to Copy</div>
+                    <div class="phone-icon" aria-label="Phone">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                  </div>                  
                 </div>
-                
             </div>
         </section>
+        <footer class="site-footer" id="site-footer">
+            <p>© 2024 Abdulaziz Abukar</p>
+            <p>Designed & developed with 💻 & ☕</p>
+        </footer>          
     </main>
 </body>
 </html>
