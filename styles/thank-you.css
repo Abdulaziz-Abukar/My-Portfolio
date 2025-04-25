@@ -1,0 +1,27 @@
+.thank-you-hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .thank-you-title {
+    font-size: 3rem;
+    color: var(--header-color);
+  }
+  
+  .thank-you-message {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--text-color)
+  }
+  
+  .back-home-link {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--accent-red);
+    text-decoration: underline;
+  }
+  

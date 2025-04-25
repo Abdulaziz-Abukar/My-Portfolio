@@ -1,0 +1,16 @@
+/* FOOTER SECTION */
+.site-footer {
+    text-align: center;
+    color: var(--divider-light);
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--divider-light);
+    background-color: var(--bg-color);
+}
+
+@media screen and (max-width: 600px) {
+
+    .site-footer {
+        font-size: 0.8rem;
+    }
+}  
