@@ -1,19 +1,19 @@
 /* UNIVERSALS */
 :root {
-    --bg-color: #1E1E1E;          
-    --text-color: #EFEFEF;         
-    --accent-red: #C94C4C;         
-    --hover-red: #A93226;          
-    --graphite-slate: #292929;     
-    --divider-light: #B0B0B0;      
-    --button-bg: #FFFFFF;          
-    --button-text: #C94C4C;        
-    --button-hover-bg: #C94C4C;    
-    --button-hover-text: #FFFFFF;  
+    --bg-color: #1E1E1E;
+    --text-color: #EFEFEF;
+    --accent-red: #C94C4C;
+    --hover-red: #A93226;
+    --graphite-slate: #292929;
+    --divider-light: #B0B0B0;
+    --button-bg: #FFFFFF;
+    --button-text: #C94C4C;
+    --button-hover-bg: #C94C4C;
+    --button-hover-text: #FFFFFF;
     --header-color: #FF6B6B;
     --contact-bg: #2A2A2A;
 
-  }  
+}
 
 html {
     font-size: 16px;
@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     background-color: var(--bg-color);
     font-family: 'Monteserrat', sans-serif;
-    
+
 }
 
 .title-parent {
@@ -69,6 +69,7 @@ header {
     padding: 1rem;
     text-decoration: none;
     color: var(--text-color);
+    transition: all 0.3s ease;
 }
 
 .list-items a:hover {
@@ -140,6 +141,19 @@ header {
     margin-bottom: 2.5rem;
 }
 
+.resume-button {
+    color: var(--button-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.resume-button:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+
 /* SKILLS SECTION */
 .skills-section {
     color: var(--text-color);
@@ -163,14 +177,14 @@ header {
     gap: 2rem;
     padding: 2rem 0;
 }
-  
 
-  .icon-container img {
+
+.icon-container img {
     width: 70px;
     transition: transform 0.3s ease;
 }
-  
-  .icon-container img:hover {
+
+.icon-container img:hover {
     transform: scale(1.2);
 }
 
@@ -198,7 +212,14 @@ header {
 }
 
 .projects {
-    width: 25%;
+    width: 30%;
+    transition:
+        background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out,
+        border 0.3s ease-in-out,
+        border-radius 0.3s ease-in-out,
+        transform 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
 
 }
 
@@ -213,7 +234,7 @@ header {
 
 .language-framework {
     margin: 1.4rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .language-framework i {
@@ -232,7 +253,7 @@ header {
     border: 2px solid var(--divider-light);
     border-radius: 1rem;
     background-color: var(--hover-red);
-    color: var(--button-hover-text);  
+    color: var(--button-hover-text);
     transform: translateY(-8px);
     box-shadow: 0 8px 24px rgba(255, 107, 107, 0.3);
 }
@@ -254,7 +275,8 @@ header {
 .contact-container {
     width: 50%;
     margin: 0 auto;
-    background-color: var(--contact-bg); /* updated */
+    background-color: var(--contact-bg);
+    /* updated */
     border-radius: 1rem;
     font-size: 1.1rem;
     padding: 2rem;
@@ -268,10 +290,10 @@ header {
     gap: 1.5rem;
     margin-top: 2rem;
     font-size: 1.2rem;
-  }
-  
-  .contact-form input[type="email"],
-  .contact-form textarea {
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
     background-color: #1c1c1c;
     border: 1px solid var(--divider-light);
     color: var(--text-color);
@@ -281,14 +303,15 @@ header {
     width: 100%;
     box-sizing: border-box;
     resize: none;
-  }
-  
-  .contact-form input[type="email"]::placeholder,
-  .contact-form textarea::placeholder {
+}
+
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
     color: #bbbbbb;
-  }
-  
-  #submit-button {
+    font-family: "Playfair", sans-serif;
+}
+
+#submit-button {
     width: 100%;
     padding: 0.8rem 1.5rem;
     background-color: var(--button-bg);
@@ -297,36 +320,34 @@ header {
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #submit-button:hover {
+    transition: all 0.3s ease;
+}
+
+#submit-button:hover {
     background-color: var(--button-hover-bg);
     color: var(--button-hover-text);
-  }
+}
 
-  .social-icons {
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-top: 1.5rem;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     font-size: 3.5rem;
     color: var(--text-color);
     transition: color 0.3s ease, transform 0.3s ease;
     padding: 0 .5rem;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: var(--accent-red);
     transform: scale(1.2);
-  }
-  
-  .contact-container p {
+}
+
+.contact-container p {
     text-align: center;
     margin-top: 2rem;
-  }
-  
-  
+}
