@@ -11,12 +11,17 @@ header {
 
 }
 
-.title-parent {
+/* .title-parent {
     display: flex;
     align-items: center;
     margin-left: 1rem;
     font-size: 1.3rem;
     color: var(--text-color);
+} */
+
+.title-parent img {
+  width: 65px;
+  margin-left: 1.5rem;
 }
 
 .navbar {
@@ -39,7 +44,7 @@ header {
 }
 
 .list-items a {
-    padding: 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     text-decoration: none;
     color: var(--text-color);
     transition: all 0.3s ease;
