@@ -78,6 +78,7 @@
 .social-icons a {
     font-size: 3.5rem;
     color: var(--text-color);
+    text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
     padding: 0 .5rem;
 }
