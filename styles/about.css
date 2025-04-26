@@ -1,4 +1,3 @@
-
 /* ABOUT-SECTION */
 .about-section {
     color: var(--text-color);
@@ -53,7 +52,7 @@
     .about-section {
         text-align: center;
     }
-    
+
     .about-section h2 {
         font-size: 2.3rem;
     }
@@ -74,18 +73,18 @@
     .about-section {
         text-align: center;
     }
-    
+
     .about-section h2 {
         font-size: 2rem;
     }
 
     .text-container h3 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .text-container {
-        font-size: 1rem;
-        max-width: 500px;
+        font-size: .8rem;
+        max-width: 300px;
         line-height: 2.5
     }
 }

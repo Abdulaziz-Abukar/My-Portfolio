@@ -86,22 +86,22 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .phone-icon {
+}
+
+.phone-icon {
     font-size: 3.5rem;
     color: var(--text-color);
     transition: color 0.3s ease, transform 0.3s ease;
     padding: 0 0.5rem;
-  }
-  
-  .phone-icon:hover {
+}
+
+.phone-icon:hover {
     color: var(--accent-red);
     transform: scale(1.2);
-  }
-  
-  /* Tooltip style */
-  .tooltip {
+}
+
+/* Tooltip style */
+.tooltip {
     visibility: hidden;
     background-color: var(--hover-red);
     color: var(--button-hover-text);
@@ -110,20 +110,21 @@
     padding: 0.5rem 1rem;
     position: absolute;
     z-index: 1002;
-    bottom: 120%; /* Position above icon */
+    bottom: 120%;
+    /* Position above icon */
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 0.9rem;
     white-space: nowrap;
-  }
-  
-  .phone-icon-container:hover .tooltip {
+}
+
+.phone-icon-container:hover .tooltip {
     visibility: visible;
     opacity: 1;
-  }
-  
+}
+
 
 .social-icons a:hover {
     color: var(--accent-red);
@@ -144,7 +145,7 @@
     .social-icons a {
         font-size: 3.2rem;
     }
-    
+
     .phone-icon {
         font-size: 3.2rem;
     }
@@ -155,6 +156,7 @@
     .contact-section h2 {
         font-size: 2.3rem;
     }
+
     .contact-container p {
         font-size: 1.1rem;
     }
@@ -166,6 +168,7 @@
     .social-icons a {
         font-size: 3rem;
     }
+
     .phone-icon {
         font-size: 3rem;
     }
@@ -176,8 +179,9 @@
     .contact-section h2 {
         font-size: 2rem;
     }
+
     .contact-container p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .contact-container {
@@ -185,9 +189,10 @@
     }
 
     .social-icons a {
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
+
     .phone-icon {
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
 }
