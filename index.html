@@ -1,115 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Basic Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="This is Abdulaziz's Web Portfolio">
-    <meta name="keywords" content="HTML, CSS JavaScript, Java, Android, IOS, Python">
-    <meta name="author" content="Abdulaziz Abukar">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is Abdulaziz's Web Portfolio" />
+    <meta
+      name="keywords"
+      content="HTML, CSS JavaScript, Java, Android, IOS, Python"
+    />
+    <meta name="author" content="Abdulaziz Abukar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title -->
     <title>Abdulaziz's Portfolio</title>
 
     <!-- CSS Links -->
-     <link rel="stylesheet" href="styles/reset.css">
-     <link rel="stylesheet" href="styles/styles.css">
-     <link rel="stylesheet" href="./styles/header.css">
-     <link rel="stylesheet" href="./styles/about.css">
-     <link rel="stylesheet" href="./styles/hero-section.css">
-     <link rel="stylesheet" href="./styles/skills.css">
-     <link rel="stylesheet" href="./styles/projects-section.css">
-     <link rel="stylesheet" href="./styles/contact-section.css">
-     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/hero-section.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/projects-section.css" />
+    <link rel="stylesheet" href="./styles/contact-section.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
-     <!-- JS SRCS -->
-     <script src="./scripts/hamburger.js" defer></script>
-     <script src="./scripts/typing-title.js" defer></script>
-     <script src="./scripts/project-links.js" defer></script>
-     <script src="./scripts/copy-phone.js" defer></script>
-     <script src="./scripts/form-validation.js" defer></script>
-     <script src="./scripts/scrollAnimations.js" defer></script>
-     
+    <!-- JS SRCS -->
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/typing-title.js" defer></script>
+    <script src="./scripts/project-links.js" defer></script>
+    <script src="./scripts/copy-phone.js" defer></script>
+    <script src="./scripts/form-validation.js" defer></script>
+    <script src="./scripts/scrollAnimations.js" defer></script>
 
-     <!-- Fonts? -->
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Fonts? -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
+    <!-- DEVIICONS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
-     <!-- DEVIICONS -->
-     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-     <!-- Favicon -->
-     <link rel="icon" type="image/png" href="./Images/favicon-32x32.png">
-          
-</head>
-<body>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Images/favicon-32x32.png" />
+  </head>
+  <body>
     <header>
-        <div class="title-parent">
-            <img src="./Images/Me.png" alt="An image of Abdulaziz Abukar in a suit">
-        </div>
+      <div class="title-parent">
+        <img
+          src="./Images/Me2.png"
+          alt="An image of Abdulaziz Abukar in a suit"
+        />
+      </div>
 
-        <div class="hamburger" id="hamburger">
-            ☰ 
-        </div>
-        <nav class="navbar" id="navbar">
-            <ul class="list-container">
-                <li class="list-items"><a href="#about-section">About</a></li>
-                <li class="list-items"><a href="#skills-section">Skills</a></li>
-                <li class="list-items"><a href="#projects-section">Projects</a></li>
-                <li class="list-items"><a href="#contact-section">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="hamburger" id="hamburger">☰</div>
+      <nav class="navbar" id="navbar">
+        <ul class="list-container">
+          <li class="list-items"><a href="#about-section">About</a></li>
+          <li class="list-items"><a href="#skills-section">Skills</a></li>
+          <li class="list-items"><a href="#projects-section">Projects</a></li>
+          <li class="list-items"><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="hero-section">
-        <div class="mission-container">
-            <h1>Hi, I'm Abdulaziz</h1>
-            <h2>But others know me as a <span id="changing-title">Developer</span></h2>
-        </div>
+      <div class="mission-container">
+        <h1>Hi, I'm Abdulaziz</h1>
+        <h2>
+          But others know me as a <span id="changing-title">Developer</span>
+        </h2>
+      </div>
     </section>
     <main>
-        <section class="about-section" id="about-section">
-            <h2 class="slide-in-left">About</h2>
-            <div class="text-container">
-                <h3 class="slide-in-left">Craft Code Across Platforms</h3>
-                <p class="slide-in-left">
-                    I'm Abdulaziz Abukar, a software developer based in Calgary with hands-on experience building both web and mobile applications. 
-                    I specialize in HTML, CSS, and Javascript, using these core technologies to develop responsive, user-friendly websites. 
-                    On the mobile side, I've built applications for both IOS using Swift, and Android using Java — 
-                    giving me a well-rounded perspective on front-end development across platforms.
+      <section class="about-section" id="about-section">
+        <h2 class="slide-in-left">About</h2>
+        <div class="text-container">
+          <h3 class="slide-in-left">Craft Code Across Platforms</h3>
+          <p class="slide-in-left">
+            I'm Abdulaziz Abukar, a software developer based in Calgary with
+            hands-on experience building both web and mobile applications. I
+            specialize in HTML, CSS, and Javascript, using these core
+            technologies to develop responsive, user-friendly websites. On the
+            mobile side, I've built applications for both IOS using Swift, and
+            Android using Java — giving me a well-rounded perspective on
+            front-end development across platforms.
+          </p>
+          <p class="slide-in-left">
+            Lately, I've been deepening my skills in React, exploring Angular to
+            broaden my frontend toolkit. Whether it's styling a beautiful layout
+            or wiring up interactivity. I take pride in writing code that's
+            clean, accessible, and functional.
+          </p>
+          <h3 class="slide-in-right">More Than Just a Developer</h3>
+          <p class="slide-in-right">
+            Outside of the screen and keyboard, I'm someone who finds a lot of
+            joy in the simple things. I'm a huge fan of Dragon Ball Z, and It's
+            been a part of my life for as long as I can remember. One of my
+            favourite moments has to be when Goku went Super Saiyan for the
+            first time on Namek. That scene gave me chills. The buildup, the
+            emotion, the shift in energy, It's something that stuck with me ever
+            since.
+          </p>
+          <p class="slide-in-right">
+            I also really value time with the people I care about. I love going
+            out to eat with my wife, especially when it involves Italian food.
+            Pasta, pizza, you name it, I'm there for it. Whether it's a cozy
+            resturant night or a laid-back evening with friends, those moments
+            always remind me to slow down and appreciate the little wins in
+            life.
+          </p>
+          <h3 class="slide-in-left">Fueled by Curiosity and Challenge</h3>
+          <p class="slide-in-left">
+            I've always been the type of person who wants to understand how
+            things work. Whether it's a bug in a program or a new framework I've
+            never touched before, I enjoy the process of figuring it out piece
+            by piece. That curiosity is what keeps me motivated. It's not just
+            about getting something to work. It's about learning along the way
+            and growing from every challenge I face.
+          </p>
+          <p class="slide-in-left">
+            Every project I take on, big or small, teaches me something new. I
+            don't shy away from the unknown. In fact, I seek it out. There's a
+            certain satisfaction in solving problems, in making something better
+            than it was yesterday. That's what keeps me going. Building,
+            experimenting, and always improving!
+          </p>
+          <h3 class="slide-in-right">Work Experience</h3>
+          <p class="slide-in-right">
+            If you'd like to see my work experience in detail, you can click
+            here to
+            <a
+              href="./assets/Abdulaziz Abukar Resume.pdf"
+              target="_blank"
+              class="resume-button"
+              >download my resume</a
+            >.
+          </p>
+        </div>
+      </section>
+      <section class="skills-section slide-in-left" id="skills-section">
+        <h2>Skills</h2>
+        <div class="icon-container">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
+          />
+        </div>
+      </section>
+      <section class="projects-section slide-in-right" id="projects-section">
+        <h2 class="slide-in-right">Projects</h2>
+        <div class="project-container">
+          <div class="projects">
+            <div class="overlay">
+              <h3>Interactive World Map</h3>
+              <div class="language-framework">
+                <i class="devicon-github-original-wordmark"></i>
+                <p>
+                  <span class="bold">Languages:</span> HTML, CSS, TypeScript
                 </p>
-                <p class="slide-in-left">
-                    Lately, I've been deepening my skills in React, exploring Angular to broaden my frontend toolkit. 
-                    Whether it's styling a beautiful layout or wiring up interactivity. I take pride in writing code that's clean, accessible, and functional.
+                <p>
+                  <span class="bold">Frameworks:</span> Angular, RxJS, Node.js
                 </p>
-                <h3 class="slide-in-right">More Than Just a Developer</h3>
-                <p class="slide-in-right">
-                    Outside of the screen and keyboard, I'm someone who finds a lot of joy in the simple things. 
-                    I'm a huge fan of Dragon Ball Z, and It's been a part of my life for as long as I can remember. 
-                    One of my favourite moments has to be when Goku went Super Saiyan for the first time on Namek. 
-                    That scene gave me chills. The buildup, the emotion, the shift in energy, It's something that stuck with me ever since.
-                </p>
-                <p class="slide-in-right">
-                    I also really value time with the people I care about. I love going out to eat with my wife, especially when it involves Italian food. 
-                    Pasta, pizza, you name it, I'm there for it. Whether it's a cozy resturant night or a laid-back evening with friends, those moments always 
-                    remind me to slow down and appreciate the little wins in life.
-                </p>
-                <h3 class="slide-in-left">Fueled by Curiosity and Challenge</h3>
-                <p class="slide-in-left">
-                    I've always been the type of person who wants to understand how things work. 
-                    Whether it's a bug in a program or a new framework I've never touched before, I enjoy the process of figuring it out piece by piece. 
-                    That curiosity is what keeps me motivated. It's not just about getting something to work. 
-                    It's about learning along the way and growing from every challenge I face.
-                </p>
-                <p class="slide-in-left">
-                    Every project I take on, big or small, teaches me something new. I don't shy away from the unknown. In fact, I seek it out. 
-                    There's a certain satisfaction in solving problems, in making something better than it was yesterday. That's what keeps me going. 
-                    Building, experimenting, and always improving!
-                </p>
-                <h3 class="slide-in-right">Work Experience</h3>
-                <p class="slide-in-right">If you'd like to see my work experience in detail, you can click here to <a href="./assets/Abdulaziz Abukar Resume.pdf" target="_blank" class="resume-button">download my resume</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="overlay">
+              <h3>Vacation Planner</h3>
+              <div class="language-framework">
+                <i class="devicon-github-original-wordmark"></i>
+                <p><span class="bold">Languages:</span> Java, Groovy</p>
+                <p><span class="bold">Frameworks:</span> Gradle, JUnit</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="overlay">
+              <h3>Chek (IOS App)</h3>
+              <div class="language-framework">
+                <i class="devicon-apple-original"></i>
+                <p><span class="bold">Languages:</span> Swift</p>
+                <p><span class="bold">Tools:</span> SPM, Firebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section slide-in-left" id="contact-section">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <p>
+            Have a question or want to work together? Feel free to drop me a
+            message below!
+          </p>
+          <form
+            action="https://formspree.io/f/xzzrzega"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              rows="6"
+              placeholder="Leave a message here!"
+              required
+            ></textarea>
 
+            <!-- prevent spam -->
+            <input type="hidden" name="_captcha" value="false" />
+
+            <!-- redirect to thank you page -->
+            <input
+              type="hidden"
+              name="_redirect"
+              value="https://abdulaziz-abukar.github.io/thank-you.html"
+            />
+
+            <button type="submit" id="submit-button">Submit</button>
+          </form>
+          <p>Or, reach out directly through one of my social platforms:</p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/abdul-abukar/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="devicon-linkedin-plain"></i>
+            </a>
+            <a
+              href="https://github.com/Abdulaziz-Abukar"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="devicon-github-original"></i>
+            </a>
+            <div class="phone-icon-container">
+              <div class="tooltip" id="phone-tooltip">Click to Copy</div>
+              <div class="phone-icon" aria-label="Phone">
+                <i class="fas fa-phone"></i>
+              </div>
             </div>
         </section>
         <section class="skills-section slide-in-left" id="skills-section">
@@ -219,5 +421,5 @@
             <p>Designed & developed with 💻 & ☕</p>
         </footer>          
     </main>
-</body>
+  </body>
 </html>
