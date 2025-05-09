@@ -1,116 +1,109 @@
 /* PROJECT-SECTION */
 
 .projects-section {
-    color: var(--text-color);
-    margin-top: 8rem;
+  color: var(--text-color);
+  margin-top: 8rem;
 }
 
 .projects-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: var(--header-color)
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--header-color);
 }
 
 .project-container {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .projects {
-    width: 30%;
-    height: 400px;
-    cursor: pointer;
-    transition:
-        background-color 0.3s ease-in-out,
-        color 0.3s ease-in-out,
-        border 0.3s ease-in-out,
-        border-radius 0.3s ease-in-out,
-        transform 0.3s ease-in-out,
-        box-shadow 0.3s ease-in-out;
-
+  width: 30%;
+  height: 400px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border 0.3s ease-in-out, border-radius 0.3s ease-in-out,
+    transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .overlay {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .projects h3 {
-    font-size: 1.4rem;
-    margin: .5rem 0 2.5rem 0;
+  font-size: 1.4rem;
+  margin: 0.5rem 0 2.5rem 0;
 }
 
 .language-framework {
-    margin: 1.4rem;
-    font-size: 1.1rem;
+  margin: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .language-framework i {
-    font-size: 7rem;
+  font-size: 7rem;
 }
 
 .language-framework p:first-of-type {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .language-framework p {
-    padding: .5rem;
+  padding: 0.5rem;
 }
 
 .projects:hover {
-    border: 2px solid var(--divider-light);
-    border-radius: 1rem;
-    background-color: var(--hover-red);
-    color: var(--button-hover-text);
-    transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(255, 107, 107, 0.3);
+  border: 2px solid var(--divider-light);
+  border-radius: 1rem;
+  background-color: var(--hover-red);
+  color: var(--button-hover-text);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(255, 107, 107, 0.3);
 }
 
 @media screen and (max-width: 768px) {
+  .projects-section h2 {
+    font-size: 2.3rem;
+  }
 
-    .projects-section h2 {
-        font-size: 2.3rem;
-    }
+  .project-container {
+    flex-direction: column;
+  }
 
-    .project-container {
-        flex-direction: column;
-    }
+  .projects {
+    width: 70%;
+    height: auto;
+  }
 
-    .projects {
-        width: 70%;
-        height: auto;
-    }
+  .projects h3 {
+    font-size: 1.2rem;
+  }
 
-    .projects h3 {
-        font-size: 1.2rem;
-    }
-
-    .language-framework {
-        font-size: 1rem;
-    }
-
+  .language-framework {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .projects-section h2 {
+    font-size: 2rem;
+  }
 
-    .projects-section h2 {
-        font-size: 2rem;
-    }
+  .projects {
+    width: 70%;
+    height: auto;
+  }
 
-    .projects {
-        width: 70%;
-        height: auto;
-    }
+  .projects h3 {
+    font-size: 1.1rem;
+  }
 
-    .projects h3 {
-        font-size: 1.1rem;
-    }
-
-    .language-framework {
-        font-size: 0.8rem;
-    }
+  .language-framework {
+    font-size: 0.8rem;
+  }
 }
