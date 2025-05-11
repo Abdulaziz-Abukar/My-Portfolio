@@ -23,7 +23,7 @@
 }
 
 .projects {
-  width: 30%;
+  width: 28%;
   height: 400px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
@@ -37,7 +37,7 @@
 
 .projects h3 {
   font-size: 1.4rem;
-  margin: 0.5rem 0 2.5rem 0;
+  margin: 0.5rem 0 1.56rem 0;
 }
 
 .language-framework {
@@ -50,7 +50,7 @@
 }
 
 .language-framework p:first-of-type {
-  margin-top: 2.5rem;
+  margin-top: 1.56rem;
 }
 
 .language-framework p {
@@ -64,6 +64,16 @@
   color: var(--button-hover-text);
   transform: translateY(-8px);
   box-shadow: 0 8px 24px rgba(255, 107, 107, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    width: 40%;
+    height: 350px;
+  }
+  .language-framework {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
