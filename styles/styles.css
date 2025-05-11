@@ -21,13 +21,17 @@ html {
 }
 
 body {
-  /* height: 500vw; */
   background: linear-gradient(
     to bottom,
     var(--graphite-slate) 20%,
     var(--bg-color) 100%
   );
   font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 main {
