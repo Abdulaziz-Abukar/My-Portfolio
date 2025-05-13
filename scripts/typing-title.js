@@ -1,4 +1,13 @@
-const titles = ["Developer", "Gamer", "Funny Guy", "Husband", "Problem Solver", "Tech Enthusiast"];
+const titles = [
+  "Developer",
+  "Gamer",
+  "Funny Guy",
+  "Husband",
+  "Problem Solver",
+  "Tech Enthusiast",
+  "Lifelong Learner",
+  "Digital Craftsman",
+];
 const changingTitle = document.getElementById("changing-title");
 
 let titleIndex = 0;
@@ -16,7 +25,7 @@ function typeEffect() {
   }
 
   if (!isDeleting && charIndex === currentTitle.length) {
-    setTimeout(() => isDeleting = true, pauseBetweenWords);
+    setTimeout(() => (isDeleting = true), pauseBetweenWords);
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
     titleIndex = (titleIndex + 1) % titles.length;

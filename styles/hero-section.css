@@ -1,79 +1,104 @@
 /* HERO-SECTION */
 .hero-section {
-    width: 100%;
-    height: 843px;
-    /* margin-top: 4.28rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: linear-gradient(to bottom, var(--graphite-slate) 0%, var(--bg-color) 100%); */
-    color: var(--text-color);
+  width: 100%;
+  height: 843px;
+  /* margin-top: 4.28rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(to bottom, var(--graphite-slate) 0%, var(--bg-color) 100%); */
+  color: var(--text-color);
 }
 
 .mission-container {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .mission-container h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .mission-container h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
+  font-size: 2.5rem;
+  font-weight: normal;
 }
 
 #changing-title {
-    font-size: 3rem;
-    color: var(--accent-red);
-    font-weight: bold;
+  font-size: 3rem;
+  color: var(--accent-red);
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  font-size: 3rem;
+  color: var(--accent-red);
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .hero-section .mission-container h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.3rem;
+  }
 
-    .hero-section .mission-container h1 {
-        font-size: 3.2rem;
-        margin-bottom: 0.3rem;
-    }
+  #changing-title {
+    font-size: 2.8rem;
+  }
 
-    #changing-title {
-        font-size: 2.8rem;
-    }
+  .cursor {
+    font-size: 2.8rem;
+  }
 
-    .hero-section .mission-container h2 {
-        font-size: 2.3rem;
-    }
+  .hero-section .mission-container h2 {
+    font-size: 2.3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .hero-section .mission-container h1 {
+    font-size: 2.5rem;
+  }
 
-    .hero-section .mission-container h1 {
-        font-size: 2.5rem;
-    }
+  #changing-title {
+    font-size: 2.5rem;
+  }
 
-    #changing-title {
-        font-size: 2.5rem;
-    }
+  .cursor {
+    font-size: 2.5rem;
+  }
 
-    .hero-section .mission-container h2 {
-        font-size: 2rem;
-    }
+  .hero-section .mission-container h2 {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .hero-section .mission-container h1 {
+    font-size: 2rem;
+  }
 
-    .hero-section .mission-container h1 {
-        font-size: 2rem;
-    }
+  #changing-title {
+    font-size: 1.2rem;
+  }
+  .cursor {
+    font-size: 1.2rem;
+  }
 
-    #changing-title {
-        font-size: 1.2rem;
-    }
-
-    .hero-section .mission-container h2 {
-        font-size: 1.2rem;
-    }
+  .hero-section .mission-container h2 {
+    font-size: 1.2rem;
+  }
 }
