@@ -24,6 +24,11 @@ header {
   margin-left: 1.5rem;
 }
 
+.title-parent img:hover {
+  box-shadow: 0 0 8px var(--accent-red);
+  border-radius: 50%;
+}
+
 .navbar {
   width: 50%;
 }
