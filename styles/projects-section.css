@@ -79,6 +79,43 @@
 }
 
 @media screen and (max-width: 768px) {
+  .overlay {
+    opacity: 1 !important;
+    position: static;
+    transform: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    pointer-events: auto;
+  }
+
+  .projects {
+    width: 90%;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    background-color: var(--hover-red);
+    color: var(--button-hover-text);
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  .projects:hover {
+    border: none;
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  .projects h3::after {
+    content: "↗ Tap to view";
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    color: var(--button-hover-text);
+  }
+
   .projects-section h2 {
     font-size: 2.3rem;
   }
