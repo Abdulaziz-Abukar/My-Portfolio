@@ -71,7 +71,6 @@
 @media screen and (max-width: 1024px) {
   .projects {
     width: 40%;
-    height: 350px;
   }
   .language-framework {
     font-size: 1rem;
